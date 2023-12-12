@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PULSE</title>
+    <link rel="stylesheet" type="text/css" href="./src/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./src/slick/slick-theme.css"/>
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
@@ -103,24 +105,33 @@
     </div>
     <div class="catalog">
         <div class="container">
-            <div class="catalog-heart">
-                <div class="left"></div>
-                <img src="./src/img/Слайд №1.png" alt="">
-                <div class="right"></div>
+            <div class="catalog-heart catalog-heart__slick">
+                <!-- <div class="left"></div> -->
+                <div class="catalog-heart__item">
+                    <img src="./src/img/slider1.png" alt="">
+                </div>
+                <div class="catalog-heart__item">
+                    <img src="./src/img/slider2.png" alt="">
+                </div>
+                <div class="catalog-heart__item">
+                    <img src="./src/img/slider3.png" alt="">
+                </div>
+
+                <!-- <div class="right"></div> -->
             </div>
             <div class="catalog-container">
                 <div class="catalog__title">Каталог пульсометров</div>
-                <div class="catalog-types">
-                    <div class="catalog__item">
+                <ul class="catalog-types">
+                    <li class="catalog-types__item">
                         <div class="catalog__content">Для фитнеса</div>
-                    </div>
-                    <div class="catalog__item">
+                    </li>
+                    <li class="catalog-types__item">
                         <div class="catalog__content">для бега</div>
-                    </div>
-                    <div class="catalog__item">
+                    </li>
+                    <li class="catalog-types__item">
                         <div class="catalog__content"> для триатлона</div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
                 <div class="catalog-product">
                     <div class="catalog-product__item">
                         <img class="catalog-product__img" src="./src/img/photo.png" alt="">
@@ -253,5 +264,10 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./src/slick/slick.min.js"></script>    
+    <script src="./src/js/script.js"> </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
 </body>
 </html>

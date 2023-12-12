@@ -33,6 +33,15 @@
         border-radius: 50%;
         border:0.2rem solid #FFF;
         padding: 1.4rem;
+        cursor: pointer;
+        transition: 0.5s all;
+   
+
+        &:hover{
+            background-color: black;
+            transform: scale(1.2);
+        }
+
     }
 
     &__social{
@@ -41,4 +50,6 @@
         justify-content: center;
         gap: 2.7rem;
     }
+
+
 }
