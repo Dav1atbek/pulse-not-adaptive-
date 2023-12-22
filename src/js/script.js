@@ -33,39 +33,39 @@ $(document).ready(() => {
 
   // modal
   
-  $('[data-modal=consultation]').on('click', function(){
+  // $('[data-modal=consultation]').on('click', function(){
+  //   $('.overlay, #consultation').fadeIn('slow');
+  // });
+  // $('.modal__close').on('click', function(){
+  //   $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+  // });
+
+
+  // $('.button_buy').each(function(i) {
+  //   $(this).on('click', function() {
+  //     $('#order .modal__descr').text($('.catalog-item__name').eq(i).text());
+  //     $('.overlay, #order').fadeIn('slow');
+  //   })
+  // })1
+  // $('.button_buy').on('click', function() {
+  //   $('.button_buy').fadeIn('slow');
+  // });
+  // $('.button_buy').on('click', function() {
+  //   $('.order').fadeOut('slow');
+  // });
+  $('[data-modal=consultation]').on('click', function () {
     $('.overlay, #consultation').fadeIn('slow');
-  });
-  $('.modal__close').on('click', function(){
+});
+$('.modal__close').on('click', function () {
     $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
-  });
+});
 
-
-  $('.button_buy').each(function(i) {
-    $(this).on('click', function() {
-      $('#order .modal__descr').text($('.catalog-item__name').eq(i).text());
-      $('.overlay, #order').fadeIn('slow');
-    })
-  })1
-  $('.button_buy').on('click', function() {
-    $('.button_buy').fadeIn('slow');
-  });
-  $('.button_buy').on('click', function() {
-    $('.order').fadeOut('slow');
-  });
-//   $('[data-modal=consultation]').on('click', function () {
-//     $('.overlay, #consultation').fadeIn('slow');
-// });
-// $('.modal__close').on('click', function () {
-//     $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
-// });
-
-// $('.button_buy').each(function (i) {
-//     $(this).on('click', function () {
-//         $('#order .modal__descr').text($('.catalog-item__name').eq(i).text());
-//         $('.overlay, #order').fadeIn('slow');
-//     });
-// });
+$('.button_buy').each(function (i) {
+    $(this).on('click', function () {
+        $('#order .modal__descr').text($('.catalog-item__name').eq(i).text());
+        $('.overlay, #order').fadeIn('slow');
+    });
+});
 
   // $('.button_submit').on('click', function(){
   //   $('.modal_mini').fadeIn('slow');
