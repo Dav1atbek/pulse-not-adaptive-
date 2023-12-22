@@ -1,0 +1,57 @@
+.overlay {
+    
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+
+    background-color: rgba($color: #000000, $alpha: 0.56);
+
+    &_none {
+        display: none;
+    }
+}   
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 38rem;
+    min-height: 40rem;
+    background-color: #f2f2f2;
+    padding: 3.8rem 4rem 4rem 4rem;
+
+    &__close{
+        position: absolute;
+        top: 0;
+        right: -4rem;
+        font-size: 4.1rem;
+        line-height: 2.1rem;
+        color: $main-color;
+        cursor: pointer;
+
+    }
+
+    &__subtitle{
+        color: #0d0d0d;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__descr{
+        text-align: center;
+        color: #0d0d0d;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-top: 1rem;
+    }
+
+    &_mini{
+        min-height: 14rem;
+    }
+}
+
+#consultation, #order, #thanks{
+    display:none;
+}
